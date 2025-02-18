@@ -35,10 +35,14 @@ button:hover{
     height: 100px;
     margin-bottom: 10px;
 }
+
 h2 {
     color: aliceblue;
 }
+
 p {
     color: aliceblue;
+}
+.sidebar{
     
 }
