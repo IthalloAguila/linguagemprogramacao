@@ -8,7 +8,7 @@ body {
     height: 100vh;/*define altura da tela (100%)*/
 }
 .card{
-    background-color: rgb(8, 0, 0);
+    background-color: rgb(54, 49, 49);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.0.1);
@@ -22,8 +22,6 @@ button{
    border-radius: 5px;
    cursor: pointer;
     
-    
-
 }  
 button:hover{
     background-color: rgba(186, 197, 204, 0.966);
@@ -44,5 +42,32 @@ p {
     color: aliceblue;
 }
 .sidebar{
-    
+    width: 200px;
+    height: 100vh;
+    background: #554c4c;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    color: springgreen;
+}
+.sidebar ul {
+    list-style:none;
+    padding: 0;
+}
+.sidebar ul li {
+    margin: 10px;
+}
+.sidebar ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    cursor: pointer;
+}
+.container{
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
