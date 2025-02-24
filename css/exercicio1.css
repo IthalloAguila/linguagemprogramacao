@@ -1,10 +1,12 @@
 form{
     display: flex;
     flex-direction: column;
+    
 }
 .card h1 {
     color: aqua;
 }
 .card label {
     color: aliceblue;
+    margin-bottom: 10px;
 }
