@@ -1,12 +1,25 @@
 form{
     display: flex;
     flex-direction: column;
+    margin: 10px;
     
 }
-.card h1 {
+h1 {
     color: aqua;
+    margin-bottom: 10px;
 }
-.card label {
+label {
     color: aliceblue;
     margin-bottom: 10px;
+}
+input{
+    margin: 5px;
+
+}
+
+button {
+    color: aliceblue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
 }
