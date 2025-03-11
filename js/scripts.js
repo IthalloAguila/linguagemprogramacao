@@ -27,5 +27,26 @@ function exe2(){
     //alert ("O resultado é, " + mult )
     document.getElementById("mult").innerText = "O resultado é " + mult
 }
-
-
+//Exercicio 3
+function exe3(){
+    let nro1 = Number(document.getElementById("nro1").value)
+    let nro2 = Number(document.getElementById("nro2").value)
+    let divisao = nro1 / nro2
+    document.getElementById("divisao").innerText = "O resulta é " + divisao
+}
+//Exercicio 4
+function exe4(){
+    let nro1 = Number(document.getElementById("nro1").value)
+    let nro2 = Number(document.getElementById("nro2").value)
+    // média ponderada
+    let mp = ((nro1 * 2) + (nro2 * 3)) / 5
+    document.getElementById("mp").innerText = "O resultado é " + mp
+}
+//Exercio 5
+function exe5(){
+    let preco = Number(document.getElementById("preco").value)
+    let desconto = (preco * 10) / 100
+    document.getElementById("desconto").innerText = "O novo preço é de " 
+    + (preco - desconto)
+}
+//Exercicio 6
