@@ -53,6 +53,7 @@ function exe5(){
     //utilização do escolha 
     switch (selecao)
     {
+        //media
         case 1:
             document.getElementById("resultado").innerText = (nmr1 + nmr2)/2
             break
@@ -62,9 +63,41 @@ function exe5(){
         }else{
             document.getElementById("resultado").innerText = nmr2 - nmr1
         }
-        diferenca
+        break
+        //produto (multiplicação)
+        case 3:
+            document.getElementById("resultado").innerText = nmr1 * nmr2
+            break
+        // divisão
+        case 4: if(nmr2<=0){alert("O segundo numero deve ser maior que 0")
+        }else{  
+            document.getElementById("resultado").innerText = nmr1 / nmr2
+        }
+        break
+     }
+}
+function exe6(){
+    let nmr1 = Number(document.getElementById("nmr1").value)
+    let nmr2 = Number(document.getElementById("nmr2").value)
+    let selecao = Number(document.getElementById("selecao").value)
+
+    //utilização do escolha
+    switch (selecao)
+    {
+        
+        //O primeiro numero elevado ao segundo
+        case 1:
+            document.getElementById("resultado").innerText = Math.pow (nmr1,nmr2)
+            break
+        //Raiz quadrada de cada numero
+        case 2:
+            document.getElementById("resultado").innerText = (nmr1*nmr1),(nmr2*nmr2)  
+            break
+        //Raiz cubica de cada numero
+        case 3:
+            document.getElementById("resultado").innerText = (nmr1*nmr1*nmr1),(nmr2*nmr2*nmr3) 
+            break  
+          
     }
-
-
 
 }
