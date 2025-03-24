@@ -87,17 +87,43 @@ function exe6(){
         
         //O primeiro numero elevado ao segundo
         case 1:
-            document.getElementById("resultado").innerText = Math.pow (nmr1,nmr2)
+            document.getElementById("resultado").innerText ="A potencia é " + Math.pow (nmr1,nmr2)
             break
         //Raiz quadrada de cada numero
         case 2:
-            document.getElementById("resultado").innerText = (nmr1*nmr1),(nmr2*nmr2)  
+            document.getElementById("resultado").innerHTML = "RQ do Numero 1" + Math.sqrt(nmr1) + "<br/>RQ do numero 2" + Math.sqrt(nmr2)
             break
         //Raiz cubica de cada numero
         case 3:
-            document.getElementById("resultado").innerText = (nmr1*nmr1*nmr1),(nmr2*nmr2*nmr3) 
-            break  
+            document.getElementById("resultado").innerHTML =  "RC do Numero 1" + Math.cbrt(nmr1).toFixed(2) + "<br/>RC do numero 2" + Math.cbrt(nmr2).toFixed(2)
+            break   
           
+    }
+
+}
+function exe7(){
+    //recupera os dados do usuario
+    let salario = Number(document.getElementById("salario").value)
+    //verifica salario
+    if(salario < 500){
+    document.getElementById("novo") .innerHTML = "Salario negativo"
+    }
+    else if (salario<500){
+        document.getElementById("novo").innerHTML 
+    }
+
+}
+function exe8(){
+    //recupera os dados do usuario
+    let salario = Number(document.getElementById("salario").value)
+    if(salario < 0){
+        document.getElementById("novo").innerHTML = "Salario negativo"
+    }
+    else if (salario<=300){
+        document.getElementById("novo").innerHTML = "Novo salario " + (salario + salario*0.35)
+    }
+    else {
+        document.getElementById("novo").innerHTML = "Novo salario " + (salario + salario*0.15)
     }
 
 }
