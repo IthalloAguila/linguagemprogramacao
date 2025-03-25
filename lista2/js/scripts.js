@@ -127,3 +127,47 @@ function exe8(){
     }
 
 }
+function exe9(){
+    //recupera os dados do usuario
+    let saldo = Number(document.getElementById("saldo").value)
+    let = credito = 0
+    if (saldo > 400){
+        credito = saldo *0.30
+    }
+    else if((saldo >300)&&(saldo <=400)){
+        credito = saldo *0.20
+    }
+    else if ((saldo>200)&&(saldo<=200)){
+        credito = saldo*0.10
+    }
+    else{ //saldo negativo
+        document.getElementById("credito").innerHTML = "Saldo nao pode ser negativo"
+        return //saiu da função
+    }
+    document.getElementById("credito").innerText = `Saldo ${saldo} e credito ${credito}`   
+}
+function exe10(){
+    //recupera custo
+    let custo = Number(document.getElementById("custo").value)
+    let distribuidor = 0
+    let imposto = 0
+    if (custo <12000 && custo <=25000){
+        distribuidor = custo *0.5
+        imposto = 0
+    }
+    else if (custo >=12000 && custo <=25000){
+        distribuidor = custo *0.10
+        imposto = custo *0.15
+    }      
+    else if (custo >25000 ){//custo  negativo
+        distribuidor = custo *0.15
+        imposto = custo * 0.20
+    }
+    else{
+        document.getElementById("consumidor").innerHTML = "Custo negativo"
+        return//sair da função
+    }
+    let consumidor = custo + imposto + distribuidor
+    document.getElementById("consumidor").innerHTML = `Custo da Fabrica: ${custo} <br/>
+    Distrbuidor: ${distribuidor}<br/> Imposto: ${imposto}<br/> Preço ao consumidor Final: ${consumidor}`
+}
