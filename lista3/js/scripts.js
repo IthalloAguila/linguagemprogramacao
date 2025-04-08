@@ -84,6 +84,46 @@ function exe4(){
 function exe5(){
     let resultado = ""
     for (let numero = 1; numero <= 10; numero++){
-        
+        resultado += `Tabuada do ${numero} <br/>`
+
     }
+}
+function exe6(){
+    let codigo, valor, totalvista = 0, totalprazo = 0
+    for (let i =1; i<= 5; i++){
+        do {
+            codigo = prompt(`Digite V (A vista) ou P (A prazo)`).toUpperCase()
+        }
+        while (codigo != 'V' && codigo != "P")
+        valor = Number(prompt(`Digite o valor da transação  `))
+        if (codigo == 'V'){
+            totalvista += valor
+        }
+        else {
+            totalprazo += valor 
+        }
+        document.getElementById("resultado").innerHTML = `<br/>Total a Vista ${totalvista}<br/>Total a Prazo ${totalprazo}<br/>Total Geral ${totalprazo + totalvista}<br/>Valor da Primeira parcela a prazo${totalprazo/3}`
+    }
+}
+function exe7(){
+    let idade, altura, peso, idade50 = 0, idade10e20, somaaltura = 0
+    for (let i = 1; i <= 5; i ++){
+        do {
+            idade = Number(prompt(`Informe a idade`))
+        }
+        while (idade < 0)
+        altura = Number(prompt('Informe a Altura'))
+        peso = Number(prompt('Informe o Peso '))
+        if (idade > 50){//item 1
+            idade50++
+        }
+        if (idade >= 10 && idade <= 20 ){//item 2
+            idade10e20++ //conta pessoas entre 10 e 20
+        }
+        if (peso < 40){// item 3
+            peso40++  
+        }
+    }
+    document.getElementById('resultado').innerHTML = `<br/>Item 1${idade50} <br/>Item 2
+    ${somaaltura/idade10e20} <br/>Item 3${peso40}`
 }
